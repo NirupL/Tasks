@@ -1,0 +1,879 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    
+}
+:root {
+  /* Brand Colors */
+  --primary-red: #d23c3c;   /* Redbus main red */
+  --dark-red: #a82c2c;      /* Darker red for hover */
+  --secondary: #f6b93b;     /* Accent yellow/golden */
+  --blue-accent: #007bff;   /* Used for links/offers sometimes */
+
+  /* Neutral Colors */
+  --white: #ffffff;
+  --light-gray: #f7f7f7;
+  --gray: #cccccc;
+  --dark-gray: #333333;
+  --black: #000000;
+
+  /* Text Colors */
+  --text-dark: #222222;
+  --text-light: #666666;
+
+  /* Shadows */
+  --shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  /* Border Radius */
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+}
+
+.icon{
+    width: 20px;
+}
+
+
+ .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+ }
+ .totdiv{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-right: 85px;
+
+ }
+ a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+
+ }
+ /* img:hover{
+    background-color: aqua;
+    transition-duration: 2ms;
+ } */
+  .redbus2{
+    margin-left: 13px;
+    margin-bottom: -5px;
+  }
+  .redbus2:hover{
+    text-decoration: underline red;
+  }
+  .train{
+    margin-left: 10px;
+    margin-bottom: -5px;
+  }
+  .train:hover{
+    text-decoration: underline red;
+  }
+  .bus1{
+    font-size: 12px;
+    /* margin-left: 5px; */
+  }
+  .train1{
+    font-size: 12px;
+    margin-top: -10px;
+    
+  }
+ .totdiv2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: 75px;
+ }
+.bookings{
+    margin-top: 10px;
+    font-weight: 10px;
+}
+.bookings > a{
+  font-weight: 5px;
+}
+.help{
+    margin-top: 10px;
+}
+.account{
+    margin-top: 10px;
+}
+
+.bookings:hover{
+    background-color: rgb(197, 212, 212);
+    transition-duration: 2ms;
+    border-radius: 15%;
+    
+}
+.help:hover{
+    background-color: rgb(197, 212, 212);
+    transition-duration: 2ms;
+    border-radius: 15%;
+}
+.account:hover{
+    background-color: rgb(197, 212, 212);
+    transition-duration: 2ms;
+    border-radius: 15%;
+}
+.intro_image{
+    background:
+    linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),
+    url("https://s3.rdbuz.com/Images/responsiveweb/HomeBanner.webp");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+h1{
+    color: white;
+    font-size: 36px;
+    font-weight: 900;
+    width: 350px;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+.search{
+    border: none;
+    box-shadow: 6px 1px 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: -50px;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.search_content {
+  display: flex;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  flex: 1;
+}
+
+.column {
+  flex: 1; /* all columns equal by default */
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(173, 158, 158, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.date-column{
+  justify-content: space-between;
+}
+
+/* Make only the Date of Journey column larger */
+.column.date-column {
+  flex: 2;   /* takes double width compared to others */
+  max-width: 400px; /* ensure enough space */
+}
+
+.search_bar{
+    border : none;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: -20px;
+    background-color: var(--primary-red);
+    gap: 5px
+    
+
+}
+/* .search_logo{
+    color: wheat;
+} */
+.search_bar > a{
+    font-size: larger;
+    color: white;
+}
+.today_tomorrow{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.today_tomorrow p{
+    padding: 10px;
+    background-color: rgb(247, 176, 199);
+    color: black;
+    border-radius: 20px;
+}
+.book_women{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 11px;
+    margin-left: 15px;
+}
+.book_women img{
+    width: 40px;
+}
+.FreeBook a{
+    font-size: 15px;
+    text-decoration: underline;
+    color: blueviolet;
+}
+.train_logo{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    gap: 10px;
+}
+.booking_train{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.offerText___b31559{
+    display: flex;
+    margin-left: 60px;
+    gap: 5px;
+}
+.fest{
+    font-weight: bolder;
+    color: #a82c2c;
+}
+.sep{
+    margin-left: 100px;
+    margin-top: -20px;
+}
+.September{
+    margin-left: 20px;
+    margin-top: -15px;
+}
+.oct{
+    margin-left: 60px;
+    margin-top: -20px;
+}
+.october{
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+.tonalButton___43dff6{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 5px;
+    margin-top: -20px;
+    background-color: rgb(190, 186, 186);
+    padding-left: 20px;
+    padding-right:20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px ;
+    margin-left: 450px;
+    border-style: none;
+    justify-content: center;
+}
+.irctc{
+    margin-left: 450px;
+}
+
+.booking-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a6f4a6; /* light green */
+  border-radius: 12px;
+  padding: 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Zig-zag border effect */
+.booking-banner::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffffff 0px,
+    #ffffff 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.booking-banner::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffffff 0px,
+    #ffffff 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.banner-text h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  margin-right: 30px;
+}
+
+.banner-text p {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.banner-img img {
+  max-height: 150px;
+}
+.offers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+.offers > a{
+    text-decoration: underline;
+    color: blue;
+}
+.all_bus_train{
+    display: flex;
+    margin-left: 50px;
+    gap: 30px;
+}
+.all{
+    /* background-color: #a6f4a6; */
+    padding: 10px;
+    border-radius: 30px;
+}
+.all:hover{
+    background-color: #a6f4a6;
+    transition-duration: 2ms;
+}
+
+.offers-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+  margin-left: 50px;
+  scrollbar-width: none;
+}
+
+.offer-card {
+  flex: 0 0 280px; /* card width */
+  background: url("https://st.redbus.in/Images/INDOFFER/Sampleimages/296x200.png"),
+   #f9d9d9; /* light bg */
+  border-radius: 16px;
+  padding: 20px;
+  scroll-snap-align: start;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.offer-card1 {
+  flex: 0 0 280px; /* card width */
+  background: url("https://st.redbus.in/Images/INDOFFER/Sampleimages/sampleimage1.png") no-repeat center,
+              #f9d9d9; /* light bg */
+  background-size: contain; 
+  border-radius: 16px;
+  padding: 20px;
+  scroll-snap-align: start;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 280px; /* use actual card width instead of 10px */
+  height: 200px; /* set a height so image can display */
+
+}
+.offer-card2 {
+  flex: 0 0 280px; /* card width */
+  background: url("https://st.redbus.in/Images/INDOFFER/ICICI500/ICICI-Bank.png") no-repeat center,
+              #f9d9d9; /* light bg */
+  background-size: contain; 
+  border-radius: 16px;
+  padding: 20px;
+  scroll-snap-align: start;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 280px; /* use actual card width instead of 10px */
+  height: 200px; /* set a height so image can display */
+}
+.offer-card3 {
+  flex: 0 0 280px; /* card width */
+  background: url("https://st.redbus.in/Images/INDOFFER/AXIS/Axisimages/Android-iOS-296x200.png") no-repeat center,
+              #f9d9d9; /* light bg */
+  /* background-size: contain;  */
+  border-radius: 16px;
+  padding: 20px;
+  scroll-snap-align: start;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 280px; /* use actual card width instead of 10px */
+  height: 200px; /* set a height so image can display */
+}
+
+
+.offer-card img {
+  max-width: 130px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.offer-card1 img {
+  max-width: 140px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.offer-card2 img {
+  max-width: 140px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.offer-card3 img {
+  max-width: 140px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.offer-card .tag {
+  background: #555;
+  color: white;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.offer-card1 .tag {
+  background: #555;
+  color: white;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.offer-card2 .tag {
+  background: #555;
+  color: white;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.offer-card3 .tag {
+  background: #555;
+  color: white;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.offer-card h3 {
+  font-size: 1rem;
+  margin: 12px 0 6px;
+}
+.offer-card1 h3 {
+  font-size: 1rem;
+  margin: 12px 0 6px;
+}
+.offer-card2 h3 {
+  font-size: 1rem;
+  margin: 12px 0 6px;
+}
+.offer-card3 h3 {
+  font-size: 1rem;
+  margin: 12px 0 6px;
+}
+
+.offer-card p {
+  color: #444;
+  font-size: 0.9rem;
+}
+.offer-card1 p {
+  color: #444;
+  font-size: 0.9rem;
+}
+.offer-card2 p {
+  color: #444;
+  font-size: 0.9rem;
+}
+.offer-card3 p {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.offer-card .coupon {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: white;
+  border: 1px dashed #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.offer-card1 .coupon {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: white;
+  border: 1px dashed #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.offer-card2 .coupon {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: white;
+  border: 1px dashed #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.offer-card3 .coupon {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: white;
+  border: 1px dashed #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  margin-left: 50px;
+}
+
+/* What's new banners */
+.whats-new {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  margin-left: 50px;
+  scrollbar-width: none;
+}
+
+.whats-new::-webkit-scrollbar {
+  height: 6px;
+}
+.whats-new::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.banner-card {
+  flex: 0 0 auto;
+  width: 280px;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  
+}
+.banner-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gov-buses {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-left: 50px;
+  scrollbar-width: none;
+}
+.gov-buses scrollable{
+  scrollbar-width: none;
+}
+
+.gov-buses::-webkit-scrollbar {
+  height: 6px;
+}
+.gov-buses::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.bus-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+  scrollbar-width: none;
+}
+
+.bus-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.bus-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bus-header h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.rating {
+  background: #00b75a;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.bus-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.partner {
+  font-size: 12px;
+  background: #f5f5f5;
+  padding: 5px 8px;
+  border-radius: 8px;
+  color: #333;
+  display: inline-block;
+}
+.scrollbar_container{
+  scrollbar-width: none;
+}
+/* Testimonials */
+.testimonials-section {
+  margin: 40px 0;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.testimonials {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+
+.testimonial-card {
+  flex: 1;
+  min-width: 240px;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.testimonial-card p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.testimonial-card h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.testimonial-card span {
+  font-size: 12px;
+  color: #777;
+}
+.app-section {
+  margin: 40px 0;
+}
+
+.app-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff5f5;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  margin-left: 50px;
+}
+
+.app-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.app-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.app-info p {
+  font-size: 13px;
+  color: #555;
+  margin: 4px 0 0;
+}
+
+.download-btn {
+  background: #ffcccc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #ff9999;
+}
+/* Footer Styles */
+.footer {
+  background-color: #f5f5f5; /* light gray background */
+  padding: 40px 80px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #0000ee; /* same as screenshot (blue links) */
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+/* Bottom Footer */
+.footer-bottom {
+  background-color: #f8f8fc; /* light grayish background */
+  padding: 40px 80px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-bottom-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-description {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+}
+
+.footer-description p {
+  max-width: 800px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.footer-bottom hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-social a img {
+  width: 28px;
+  height: 28px;
+  margin-left: 15px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.footer-social a img:hover {
+  filter: grayscale(0%);
+}
+
+
+
+
+
+
