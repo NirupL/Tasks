@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+           
+           <bean id="car_petrol" class="vehicles.Car">
+           		<constructor-arg ref="petrol_engine"></constructor-arg>
+           		
+           
+           </bean>
+           
+           <bean id="car_diesel" class="vehicles.Car">
+           		<constructor-arg ref="diesel_engine"></constructor-arg>
+           
+           </bean>
+           
+           <bean id="petrol_engine" class="engines.Petrol_engine">
+           
+           </bean>
+           
+            <bean id="diesel_engine" class="engines.Diesel_engine">
+           
+           </bean>
+           
+           <bean id="rent_vehicle" class="rentalService.Rent_Service">
+           		<property name="bool" value="true"></property>
+           		<property name="vehicle" ref="car_petrol"></property>
+           </bean>
+           
+           <bean id="rent_vehicle1" class="rentalService.Rent_Service">
+           		<property name="bool" value="true"></property>
+           		<property name="vehicle" ref="bike_petrol"></property>
+           </bean>
+           
+           
+            <bean id="bike_petrol" class="vehicles.Bike">
+           		<constructor-arg ref="petrol_engine"></constructor-arg>
+           		
+           
+           </bean>
+           
+           <bean id="bike_diesel" class="vehicles.Bike">
+           		<constructor-arg ref="diesel_engine"></constructor-arg>
+           
+           </bean>
+           
+           
+           
+           
+           
+</beans>
